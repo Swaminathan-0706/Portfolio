@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+
+}
+.text-primary{
+    color:#3693ff;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #3693ff ;
+}
+#navbar ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+#navbar h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition:background-color 0.7s;
+}
+
+#navbar li a:hover{
+    background-color: #3693ff;
+
+}
+#showcase{
+    background: url(../images/lines-of-code-2653362.jpg) no-repeat center center/cover;
+    height: 91.7vh;
+}
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:81px;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+}
+.showcase-content h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.showcase-content .btn{
+    font-size: 1.5rem;
+   padding: 1rem 10rem;
+  
+}
+.showcase-content .btn:hover{
+    background: #3693ff;
+    color: white;
+    transition:color 0.7s, background 0.7s;
+  
+}
+
+.btn{
+    color: #3693ff;
+    text-decoration: none;
+    display: inline-block;
+    padding :1rem 2rem;
+    border:1px solid #3693ff;
+    border-radius: 5px;
+
+}
+#about{
+    background: url(../images/rsz_abstract-art-black-background-blur-10404991.jpg) no-repeat center center/cover;
+    height: 99.9vh;
+    color: white;
+    padding-top: 115px;
+    
+    
+}
+
+.profile{
+    border-radius: 50%;
+    transition: scale(1.3);
+}
+
+.about-img{
+    padding-top: 85px;
+    display: flex;
+    justify-content: center;
+    }
+.skill{
+    height: 75px;
+    width: 75px;
+}
+.skillc{
+    height: 73px;
+    width: 55px;
+
+}
+.about-content{
+    padding-top: 23px;
+    text-align: center;
+}
+
+.btn:hover{
+    background: #3693ff;
+    color: white;
+    transition:color 0.7s, background 0.7s;
+  
+}
+#class
+{   display: flex;
+    padding-top: 33px;
+    padding-left: 395px;
+}
+.skill:hover{
+    transform:scale(1.3);
+}
+.skillc:hover{
+    transform:scale(1.3);
+    
+}
+
+/* Section Services */
+#services h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    
+}
+#services{
+    padding:5rem 0;
+    background: url('../images/Developer.jpg') center center/cover;
+    height: 100vh;
+}
+#services h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+    
+}
+#services {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+    
+}
+#services .front  {
+    color: white;
+    background-color:  rgb(0, 0, 0,0.4);
+    flex: 1;
+    padding :1rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #b8b6b6;
+    font-size: 1rem;
+}
+
+#services .front  i{
+    color: black;
+    padding:1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+
+ }
+ #services .back h3 {
+    color: black;
+}
+ #services .back {
+    color: black;
+    background-color:  rgba(245, 226, 226, 0.4);
+    flex: 1;
+    padding :1rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #b8b6b6;
+    font-size: 1rem;
+}
+
+#services .back  i{
+    color: white;
+    padding:1rem;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+
+ }
+ .middle {
+    
+    transform: translate(-50%, -50%);
+  }
+  
+  .card {
+    margin-top: 335px;
+    
+    margin-left: 300px;
+    cursor: pointer;
+    width: 400px;
+    height: 580px;
+  }
+  
+  .front, .back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .front {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  
+  .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #f4f4f4;
+  }
+ .card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  
+  .card:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+  }
+
+  #services .front2 {
+      color: white;
+    background-color:  rgb(0, 0, 0,0.4);
+    flex: 1;
+    padding :1rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #b8b6b6;
+    font-size: 1rem;
+}
+#services .front2  i{
+    color: black;
+    padding:1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+
+ }
+ #services .back2 h3 {
+    color: black;
+}
+ #services .back2 {
+    color: black;
+    background-color:  rgba(245, 226, 226, 0.4);
+    flex: 1;
+    padding :1rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #b8b6b6;
+    font-size: 1rem;
+}
+#services .back2  i{
+    color: white;
+    padding:1rem;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+
+ }
+ .end {
+    
+    transform: translate(-50%, -50%);
+  }
+  
+  .second {
+    margin-top: 335px;
+    margin-left: 300px;
+    cursor: pointer;
+    width: 400px;
+    height: 580px;
+  }
+  
+  .front2, .back2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+  }
+  .front2 {
+    transform: perspective(600px) rotateY(0deg);
+  }
+  
+  .back2 {
+    transform: perspective(600px) rotateY(180deg);
+    background: #f4f4f4;
+  }
+ .second:hover > .front2 {
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  
+  .second:hover > .back2 {
+    transform: perspective(600px) rotateY(0deg);
+  }
+
+
+#projects{
+    background: url('../images/high-angle-view-of-cityscape-against-cloudy-sky-313782.jpg')center center/cover;;
+    height: 100vh;
+}
+#contactme {
+    background-color: #333;
+    color: white;
+    padding: 1rem 8rem;
+    border-top: 3px solid #3693ff ;
+    height: 14vh;
+    text-align: center;
+    
+}
+.icon i {
+    padding-left: 20px;
+    
+    
+}
+#cme{
+    text-decoration: none;
+    color: white;
+}
+#cme:hover{
+    color:black;
+}
+
