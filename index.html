@@ -1,145 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swaminathan-Portfolio</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body id="home">
-   <nav id="navbar">
-    <h2><a href="#home"><span class="text-primary">Swaminathan</span> VB</a></h2>
-    <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contactme">Contact me</a></li>
-    
-</ul>   
-</nav>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body id="home">
+    <!-- Navigation bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Swaminathan VB</label>
+        <ul>
+                
+                <li><a class="active"href="#about">About me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Get in Touch</a></li>
+                <li><a href="#">Social</a></li>
+        </ul>
+        </nav>
 
-<header id="showcase">
-    <div class="showcase-content">
-        <div class="container">
-            
-            <h1>Take your Business to the <br><span class="text-primary">next level</span></h1>
-            <a href="#home"  class="btn">FIND OUT HOW</a>
-        </div>
-    </div>
-</header>
-
-<!-- About -->
-<section id="about">
-    <div class="container">
+    <!-- About -->
+    <section id="about">
+      <div class="container">
         <div class="about-img">
-            <img class="profile" src="./images/0-removebg-preview (1).png" alt="Myself">
+          <img
+            class="profile"
+            src="./images/0-removebg-preview (1).png"
+            alt="Myself"
+          />
         </div>
-    <div class="about-content">
-        <h2><span class="text-primary">I'm </span>Swaminathan,</h2>
-        <h3><span class="text-primary">Front End Developer </span>JavaScript | React.js | HTML5 | CSS3</h3>
-        <br>
-        <a href="./resume.txt" download class="btn">Download CV</a>
-        
-   </div>
-   <div id="class">
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img  class="skill" src="./images/javascript.png" alt="JavaScript"></a>
-    <a href="https://reactjs.org/docs/getting-started.html" target="_blank"><img  class="skill" src="./images/react.png" alt="React.js"></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><img  class="skill" src="./images/1200px-HTML5_logo_black.svg.png" alt="HTML5"></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img  class="skillc" src="./images/1200px-CSS.3.svg.png" alt="CSS3"></a>
-    
+        <div class="about-content">
+          <h2><span class="text-primary">I'm </span>Swaminathan,</h2>
+          <h3>
+            <span class="text-primary">Front End Developer </span>JavaScript |
+            React.js | Redux | HTML5 | CSS3
+          </h3>
+          <br />
+          <a href="./resume.pdf" download class="btn">Download CV</a>
+        </div>
+        <div id="class">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            ><img class="skill" src="./images/javascript.png" alt="JavaScript"
+          /></a>
+          <a
+            href="https://reactjs.org/docs/getting-started.html"
+            target="_blank"
+            ><img class="skill" src="./images/react.png" alt="React.js"
+          /></a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+            target="_blank"
+            ><img
+              class="skill"
+              src="./images/1200px-HTML5_logo_black.svg.png"
+              alt="HTML5"
+          /></a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+            ><img class="skillc" src="./images/1200px-CSS.3.svg.png" alt="CSS3"
+          /></a>
+        </div>
+      </div>
+    </section>
 
-   </div>
-    
-</div>
-
-</section>
-<!-- Services -->
-<section id="services">
-        <br><br>
-        <div class="card middle">
-                <div class="front">
-                    <h3>Front End Web Development</h3>
-                    <div class="feature">
-                        <i class="fas fa-check"></i>HTML5
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-check"></i>CSS  |  SASS  | BOOTSTRAP
-                    </div> 
-                    <div class="feature">
-                        <i class="fas fa-check"></i>JAVASCRIPT |  jQuery
-                    </div> 
-                    <div class="feature">
-                        <i class="fas fa-check"></i>REACT.js  | REDUX
-                    </div>  
-                </div>  
-                <div class="back">
-                    <h3 >Modern Web Architecture</h3>
-                    <div class="feature">
-                        <i class="fas fa-check"></i>Responsive Web Design.
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-check"></i>Interactive User Experience.
-                    </div> 
-                    <div class="feature">
-                        <i class="fas fa-check"></i>Rich User Interface.
-                    </div> 
-                    <div class="feature">
-                        <i class="fas fa-check"></i>Browser Consistency.
-                    </div>  
-                </div>
-            
-            </div>
-                <div class="second end">
-                    <div class="front2">
-                        <h3>Database & Deployement </h3>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>Google Firebase | Firestore
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i> GIT | AWS ECS 
-                        </div> 
-                        <div class="feature">
-                            <i class="fas fa-check"></i>Webpack
-                        </div> 
-                        <div class="feature">
-                            <i class="fas fa-check"></i>Personal Assistance
-                        </div>  
-                </div>  
-                <div class="back2">
-                    <h3>Features of Modern Web </h3>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>Quality Web Content.
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>Search Engine Optimisation. 
-                        </div> 
-                        <div class="feature">
-                            <i class="fas fa-check"></i>Single Page Application.
-                        </div> 
-                        <div class="feature">
-                            <i class="fas fa-check"></i>Scalable Solution.
-                        </div>
-                     
-                </div> 
-            </div>
- </section> 
-
- <section id="projects">
-     <div>
-
-     </div>
- </section>
+    <section id="projects">
+      <div></div>
+    </section>
+    <section id="getintouch">
+      <div></div>
+    </section>
     <footer id="contactme">
-        <div class="icon">
-        <a id="cme" href="https://github.com/Swaminathan-0706" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <a id="cme" href="https://linkedin.com/in/swaminathanvb" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
-        <a  id="cme" href="mailto:sayeeiyer@gmail.com" target="_blank"><i class="fab fa-google fa-2x"></i></a>
-        </div>
-        <span>No &copy; copyright issues.Feel free to copy. If you need any help, ping me!</span>
-
-        
+      <div class="icon">
+        <a id="cme" href="https://github.com/Swaminathan-0706" target="_blank"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a id="cme" href="https://linkedin.com/in/swaminathanvb" target="_blank"
+          ><i class="fab fa-linkedin-in fa-2x"></i
+        ></a>
+        <a id="cme" href="mailto:sayeeiyer@gmail.com" target="_blank"
+          ><i class="fab fa-google fa-2x"></i
+        ></a>
+      </div>
+      <span
+        >No &copy; copyright issues.Feel free to copy. If you need any help,
+        ping me!</span
+      >
     </footer>
-</body>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>

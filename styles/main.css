@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 
+}
+a{
+    color: white;
 }
 
 body{
@@ -19,45 +24,100 @@ body{
 .text-primary{
     color:#3693ff;
 }
-
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
-    color: white;
-    padding: 1.5rem 8rem;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+/* NavBar Styling */
+nav{
+    background: #333;
+    height: 100px;
+    width: 100%;
     border-bottom: 3px solid #3693ff ;
-}
-#navbar ul{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-}
-#navbar h2 a{
-    color: #fff;
-    text-decoration: none;
-}
-
-#navbar li a{
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem;
-    font-size: 1.3rem;
-    margin: 0 0.5rem;
-    border-radius: 5px;
-    transition:background-color 0.7s;
-}
-
-#navbar li a:hover{
-    background-color: #3693ff;
-
-}
+  }
+  label.logo{
+    color: #f2f2f2;
+    font-size: 33px;
+    line-height: 100px;
+    padding: 0 140px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav ul{
+    float: right;
+    margin-right: 60px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 2px;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    /* text-transform: uppercase; */
+    font-family: 'Poppins', sans-serif;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 27px;
+      padding-left: 25px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+      margin-right: 40px;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 100px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+/* ShowCase Section Styling */
 #showcase{
     background: url(../images/lines-of-code-2653362.jpg) no-repeat center center/cover;
-    height: 91.7vh;
+    height: calc(100vh - 90px);
 }
 .showcase-content{
     display: flex;
@@ -107,7 +167,13 @@ body{
     
     
 }
+/* Responsiveness */
+@media screen and (max-width:578px){
+    .btn{
+        
+    }
 
+}
 .profile{
     border-radius: 50%;
     transition: scale(1.3);
@@ -150,195 +216,11 @@ body{
     transform:scale(1.3);
     
 }
-
-/* Section Services */
-#services h2{
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    
-}
-#services{
-    padding:5rem 0;
-    background: url('../images/Developer.jpg') center center/cover;
-    height: 100vh;
-}
-#services h3{
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: white;
-    
-}
-#services {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    
-    
-}
-#services .front  {
-    color: white;
-    background-color:  rgb(0, 0, 0,0.4);
-    flex: 1;
-    padding :1rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #b8b6b6;
-    font-size: 1rem;
-}
-
-#services .front  i{
-    color: black;
-    padding:1rem;
-    background-color: white;
-    border-radius: 50%;
-    margin: 0 1rem;
-    margin-bottom: 2rem;
-
- }
- #services .back h3 {
-    color: black;
-}
- #services .back {
-    color: black;
-    background-color:  rgba(245, 226, 226, 0.4);
-    flex: 1;
-    padding :1rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #b8b6b6;
-    font-size: 1rem;
-}
-
-#services .back  i{
-    color: white;
-    padding:1rem;
-    background-color: black;
-    border-radius: 50%;
-    margin: 0 1rem;
-    margin-bottom: 2rem;
-
- }
- .middle {
-    
-    transform: translate(-50%, -50%);
-  }
-  
-  .card {
-    margin-top: 335px;
-    
-    margin-left: 300px;
-    cursor: pointer;
-    width: 400px;
-    height: 580px;
-  }
-  
-  .front, .back {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    transition: transform .6s linear;
-  }
-  .front {
-    transform: perspective(600px) rotateY(0deg);
-  }
-  
-  .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: #f4f4f4;
-  }
- .card:hover > .front {
-    transform: perspective(600px) rotateY(-180deg);
-  }
-  
-  .card:hover > .back {
-    transform: perspective(600px) rotateY(0deg);
-  }
-
-  #services .front2 {
-      color: white;
-    background-color:  rgb(0, 0, 0,0.4);
-    flex: 1;
-    padding :1rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #b8b6b6;
-    font-size: 1rem;
-}
-#services .front2  i{
-    color: black;
-    padding:1rem;
-    background-color: white;
-    border-radius: 50%;
-    margin: 0 1rem;
-    margin-bottom: 2rem;
-
- }
- #services .back2 h3 {
-    color: black;
-}
- #services .back2 {
-    color: black;
-    background-color:  rgba(245, 226, 226, 0.4);
-    flex: 1;
-    padding :1rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #b8b6b6;
-    font-size: 1rem;
-}
-#services .back2  i{
-    color: white;
-    padding:1rem;
-    background-color: black;
-    border-radius: 50%;
-    margin: 0 1rem;
-    margin-bottom: 2rem;
-
- }
- .end {
-    
-    transform: translate(-50%, -50%);
-  }
-  
-  .second {
-    margin-top: 335px;
-    margin-left: 300px;
-    cursor: pointer;
-    width: 400px;
-    height: 580px;
-  }
-  
-  .front2, .back2 {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    transition: transform .6s linear;
-  }
-  .front2 {
-    transform: perspective(600px) rotateY(0deg);
-  }
-  
-  .back2 {
-    transform: perspective(600px) rotateY(180deg);
-    background: #f4f4f4;
-  }
- .second:hover > .front2 {
-    transform: perspective(600px) rotateY(-180deg);
-  }
-  
-  .second:hover > .back2 {
-    transform: perspective(600px) rotateY(0deg);
-  }
+/* Responsiveness */
 
 
 #projects{
-    background: url('../images/high-angle-view-of-cityscape-against-cloudy-sky-313782.jpg')center center/cover;;
+    background: url('../images/lines-of-code-2653362.jpg')center center/cover;
     height: 100vh;
 }
 #contactme {
@@ -354,6 +236,7 @@ body{
     padding-left: 20px;
     
     
+    
 }
 #cme{
     text-decoration: none;
@@ -362,4 +245,10 @@ body{
 #cme:hover{
     color:black;
 }
+#getintouch{
+    background: url('../images/react.png')center center/cover;
+    height: 100vh;
+
+}
+
 
